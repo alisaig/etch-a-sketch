@@ -16,6 +16,7 @@ button {
     border-radius: 10px;
     padding: 8px;
     font-size: 20px;
+    font-weight: 600;
 }
 
 #main {
@@ -39,7 +40,7 @@ button {
 }
 
 .box {
-    width: calc((100% - 2px * (16 - 1)) / 16);
+    /* width: calc((100% - 2px * (16 - 1)) / 16); */
     aspect-ratio: 1 / 1;
     background: rgb(186, 186, 186);
     box-sizing: border-box;
