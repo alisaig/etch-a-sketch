@@ -2,12 +2,14 @@
 #container {
     display: flex;
     flex-wrap: wrap;
+    width: 960px;
     gap: 2px;
+    margin: auto;
 }
 
 .box {
     width: calc((100% - 2px * (16 - 1)) / 16);
     aspect-ratio: 1 / 1;
-    background: rgb(147, 147, 147);
+    background: rgb(186, 186, 186);
     box-sizing: border-box;
 }
