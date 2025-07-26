@@ -6,5 +6,14 @@ const container = document.querySelector("#container");
 for (let i = 0; i < gridDimensions; i++) {
     const div = document.createElement("div");
     div.classList.add("box");
+
+    div.addEventListener("mouseover", () => {
+        div.style.background = "red";
+    });
+
     container.appendChild(div);
 }
+
+// function colorIn() {
+//     div.style.background = "red";
+// }

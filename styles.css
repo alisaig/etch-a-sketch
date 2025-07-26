@@ -8,6 +8,6 @@
 .box {
     width: calc((100% - 2px * (16 - 1)) / 16);
     aspect-ratio: 1 / 1;
-    background: rgb(83, 83, 83);
+    background: rgb(147, 147, 147);
     box-sizing: border-box;
 }
