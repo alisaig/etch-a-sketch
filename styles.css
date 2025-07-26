@@ -1,4 +1,16 @@
-/* Grid styles */
+@font-face {
+    font-family: "Finger paint";
+    src: url("fonts/finger-paint/FingerPaint-Regular.ttf") format("truetype");
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 16px;
+    text-align: center;
+    font-family: "Finger paint";
+    color: rgb(195, 6, 31);
+}
+
 button {
     font-family: "Gill Sans", sans-serif;
     border-radius: 10px;
@@ -22,7 +34,7 @@ button {
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 860px;
+    width: 840px;
     gap: 2px;
 }
 
