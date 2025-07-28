@@ -28,7 +28,7 @@ function generateGrid() {
         }
 
         function darkenValue() {
-            opacity += 0.1;
+            opacity = Math.min(opacity + 0.1, 1);
             div.style.background = color + `${opacity})`;
         }
 
