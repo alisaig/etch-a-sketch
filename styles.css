@@ -3,6 +3,7 @@
     src: url("fonts/finger-paint/FingerPaint-Regular.ttf") format("truetype");
 }
 
+/* Default styles for standard elements */
 h1 {
     font-size: 60px;
     margin-top: 16px;
@@ -19,6 +20,7 @@ button {
     font-weight: 600;
 }
 
+/* Styles for various containers */
 #main {
     display: flex;
     margin: auto;
@@ -39,9 +41,9 @@ button {
     gap: 2px;
 }
 
+/* Styles for each individual square */
 .box {
-    /* width: calc((100% - 2px * (16 - 1)) / 16); */
-    /* aspect-ratio: 1 / 1; */
+    /* Default color before it is changed with event listeners */
     background: rgb(186, 186, 186);
     box-sizing: border-box;
 }
