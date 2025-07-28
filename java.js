@@ -12,18 +12,15 @@ function generateGrid() {
         div.classList.add("box");
 
         let opacity = 0.1;
-        let color = `rgb(${randomNum()}, ${randomNum()}, ${randomNum()}, ${opacity})`;
+        let color = `rgb(${randomNum()}, ${randomNum()}, ${randomNum()}, `;
         
         div.style.width = `calc((100% - 2px * (${gridDimensions} - 1)) / ${gridDimensions})`;
         div.style.aspectRatio = "1 / 1";
 
         div.addEventListener("mouseover", applyColor);
-        // div.addEventListener("mouseover", () => {
-        //     div.style.background = `rgb(${randomNum()}, ${randomNum()}, ${randomNum()})`;
-        // });
 
         function applyColor() {
-            div.style.background = color;
+            div.style.background = color + `${opacity})`;
 
             div.removeEventListener("mouseover", applyColor);
 
@@ -32,7 +29,7 @@ function generateGrid() {
 
         function darkenValue() {
             opacity += 0.1;
-            div.style.background = color;
+            div.style.background = color + `${opacity})`;
         }
 
         container.appendChild(div);
